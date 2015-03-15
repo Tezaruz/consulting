@@ -1,0 +1,111 @@
+.row
+    .col-md-8
+        img.img-responsive.img-rounded(src='img/mainBanner.jpg', alt='')
+    .col-md-4
+        h1 О нас
+        p
+            | Наша компания осуществляет юридические услуги в области гражданского и налогового законодательства РФ .
+        p
+            | Мы работает на рынке с 2010 года и зарекомендовала себя как надежного партнера и помощника в решении Ваших проблем.
+        p
+            | Наша юридическая компания занимается закрытием ООО, ликвидацией ООО, внесением изменений, смена участников и ликвидации/реорганизации ООО и процедурой банкротства (несостоятельности) юридического лица.
+        p
+            | Мы предлагаем:
+        ul
+            li опыт и высокую квалификацию наших специалистов в решении Ваших задач;
+            li решение различных юридических вопросов;
+            li оперативность, четкость и высокий стандарт в работе;
+            li индивидуальный подход к каждому клиенту;
+            li нестандартность и эффективность в выборе средств для достижения результата.
+
+
+    #buttoncol.col-lg-2
+        #button.a.btn.btn-primary.btn-lg(data-toggle="modal" data-target="#contact") Отправить заявку.
+
+    #buttoncol.col-lg-2
+        #button.a.btn.btn-primary.btn-lg(data-toggle="modal" data-target="#telephone")  Заказать звонок.
+hr
+.row
+    .col-lg-12
+        .well.text-center
+            | Наш телефон 8(499) 390-20-94
+.row
+    .col-md-6
+        h2 Изменение состава участников (продажа доли в ООО третьему лицу)
+        p
+            | 1 июля 2009 года вступил в силу 312-ФЗ, в соответствии с которым, введен новый порядок заключения сделок с долями в уставном капитале ООО. Теперь договоры об отчуждении доли в уставном капитале ООО заключаются в нотариальной форме. Напомним, что ранее, сделки с долями в уставном капитале ООО совершались в простой письменной форме. Смена учредителей ООО представляет собой процедуру регистрации изменений в обществе с ограниченной ответственностью, связанных с изменением состава учредителей путем продажи доли участника, а также через ввод участника в общество и вывод участника из общества. Законом предусмотрены различные варианты смены состава участников ООО. Главным отличительным признаком смены учредителей ООО является необходимость нотариального заверения договора о продаже доли и возможность законно оформить переход доли в ООО без нотариуса. Подробнее о способах и деталях смены состава учредителей Вы можете ознакомиться ниже в разделе полезной информации
+        a.btn.btn-default(href='#') More Info
+    .col-md-6
+        h2 Смена генерального директора
+        p
+            | Генеральный директор осуществляет руководство текущей деятельностью юридического лица. За исключением некоторых случаев, предусмотренных законодательством, ответственность за хозяйственную деятельность предприятия несет Генеральный директор. При необходимости смены Генерального директора вносятся соответствующие изменения в сведения, содержащиеся в Едином государственном реестре юридических лиц.
+        a.btn.btn-default(href='#') More Info
+.row
+    .col-md-6
+        h2 Heading 3
+        p
+            | И тут.
+        a.btn.btn-default(href='#') More Info
+    .col-md-6
+        h2 Cмена участников
+        p
+            | Тут какойто текст.
+        a.btn.btn-default(href='#') More Info
+.row
+    .col-md-6
+        h2 Cмена директора
+        p
+            | Тут тоже.
+        a.btn.btn-default(href='#') More Info
+    .col-md-6
+        h2 Открытие счета
+        p
+            | И тут.
+        a.btn.btn-default(href='#') More Info
+.row
+    .col-md-6
+        h2 Оффшор
+        p
+            | Тут какойто текст.
+        a.btn.btn-default(href='#') More Info
+    .col-md-6
+        h2 бошка
+        p
+            | Тут тоже.
+        a.btn.btn-default(href='#') More Info
+.row
+    .col-md-6
+        h2 Heading 3
+        p
+            | И тут.
+        a.btn.btn-default(href='#') More Info
+
+
+#contact.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+    .modal-dialog
+        .modal-content
+            .modal-header
+                button.close(data-dismiss='modal', aria-hidden='true') ×
+                h3.modal-title Контакты:
+            form#contact-form.modal-body(role='form')
+                .form-group
+                    input.form-control.input-lg(type='text', placeholder='Ваше имя', name='name')
+                .form-group
+                    input.form-control.input-lg(type='email', placeholder='Ваш email', name='mail')
+                .form-group
+                    textarea.form-control.input-lg(rows='5', placeholder='Ваше сообщение', name='message')
+            .modal-footer
+                button.btn.btn-default.btn-lg(type='submit', title='Отправить Email', form='contact-form') Отправить
+#telephone.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+    .modal-dialog
+        .modal-content
+            .modal-header
+                button.close(data-dismiss='modal', aria-hidden='true') ×
+                h3.modal-title Контакты:
+            form#telephone-form.modal-body(role='form')
+                .form-group
+                    input.form-control.input-lg(type='text', placeholder='Ваше имя', name='name')
+                .form-group
+                    input.form-control.input-lg(type='text', placeholder='Ваш телефонный номер', name='message')
+            .modal-footer
+                button.btn.btn-default.btn-lg(type='submit', title='Отправить', form='telephone-form') Отправить

@@ -1,0 +1,9 @@
+{
+  "name": "consulting",
+  "version": "0.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "~3.*.*",
+    "lesshat": "~3.*.*"
+  }
+}
