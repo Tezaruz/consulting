@@ -90,11 +90,12 @@ module.exports = function (grunt) {
 
     });
 
-    grunt.loadNpmTasks('grunt-contrib-watch');
+    /*grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-jade');
-    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-copy');*/
+    require('load-grunt-tasks')(grunt);
     grunt.registerTask('default', ['uglify', 'less', 'jade:prod', 'copy:bootstrap_to_source','copy:fonts', 'copy:img']);
 
 };
