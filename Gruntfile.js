@@ -17,13 +17,18 @@ module.exports = function (grunt) {
                 compress: true
             },
             build: {
-                src: [
-                    'bower_components/bootstrap/dist/css/bootstrap.css',
-                    'bower_components/bootstrap/dist/css/bootstrap-theme.css',
-                    'source/css/bootstrap-responsive.css',
-                    'source/css/app.less'
-                ],
-                dest: 'build/css/app.css'
+                files: {
+                    'build/css/app.css':[
+                        'bower_components/bootstrap/dist/css/bootstrap.css',
+                        'bower_components/bootstrap/dist/css/bootstrap-theme.css',
+                        'source/css/bootstrap-responsive.css',
+                        'source/css/app.less'
+                    ],
+                    'build/css/services.css':[
+                        'source/css/services.less'
+                    ]
+                }
+
             }
         },
         jade: {
@@ -38,7 +43,8 @@ module.exports = function (grunt) {
                     'build/index.html': 'source/index.jade',
                     'build/about.html': 'source/about.jade',
                     'build/service.html': 'source/service.jade',
-                    'build/contact.html': 'source/contact.jade'
+                    'build/contact.html': 'source/contact.jade',
+                    'build/html/smenServ.html': 'source/html/smenServ.jade'
                 }
             }
         },
